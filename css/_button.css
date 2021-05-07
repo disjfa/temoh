@@ -1,0 +1,39 @@
+:root {
+    --button-default-background: var(--primary);
+    --button-default-background-hover: var(--secondary);
+    --button-default-padding-x: .5rem;
+    --button-default-padding-y: 1rem;
+    --button-default-radius: .2rem;
+    --button-default-border-width: 1px;
+    --button-default-border-style: solid;
+    --button-default-border-color: var(--primary);
+    --button-default-color: var(--white);
+    --button-secondary-background: var(--secondary);
+    --button-secondary-background-hover: var(--primary);
+}
+
+.button {
+    background: var(--button-default-background);
+    padding: var(--button-default-padding-x) var(--button-default-padding-y);
+    border-radius: var(--button-default-radius);
+    display: inline-block;
+    border: var(--button-default-border-width) var(--button-default-border-style) var(--button-default-border-color);
+    font-size: 1rem;
+    cursor: pointer;
+    color: var(--button-default-color);
+    text-decoration: none;
+    vertical-align: middle;
+    transition: var(--transition-delay) background-color ease-in-out;
+}
+
+.button:hover {
+    --button-default-background: var(--button-default-background-hover);
+}
+
+.button-secondary {
+    --button-default-background: var(--button-secondary-background);
+}
+
+.button-secondary:hover {
+    --button-default-background-hover: var(--button-secondary-background-hover);
+}

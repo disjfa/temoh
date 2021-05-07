@@ -1,0 +1,65 @@
+:root {
+    /*colors*/
+    --black: #151515;
+    --blue: #2980b9;
+    --gray: #bdc3c7;
+    --green: #27ae60;
+    --purple: #8e44ad;
+    --red: #c0392b;
+    --white: #fafafa;
+    --yellow: #f1c40f;
+
+    --primary: var(--blue);
+    --secondary: var(--gray);
+
+    /*defaults*/
+    --body-bg: var(--white);
+    --body-color: var(--black);
+    --body-text-align: left;
+    --box-shadow: .2rem .2rem 1rem rgba(0, 0, 0, .1);
+    --font-family-base: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    --font-size-root: 18px;
+    --font-weight-base: 400;
+    --line-height-base: 1.4;
+    --link-color-hover: var(--blue);
+    --link-color: var(--blue);
+    --link-text-decoration-hover: none;
+    --link-text-decoration: underline;
+    --root-scroll-behavior: auto;
+    --transition-delay: auto;
+
+    /*container*/
+    --container-margin: 0 auto;
+    --container-max-width: 1280px;
+    --container-padding: 1rem;
+
+    /*grid*/
+    --grid-col-max-width: 30ch;
+    --grid-gap: 1rem;
+
+    /*dropdown*/
+    --dropdown-background: var(--white);
+    --dropdown-item-padding: .5rem 1rem;
+    --dropdown-left: 0;
+    --dropdown-min-width: 20ch;
+    --dropdown-right: auto;
+    --dropdown-top: 100%;
+    --dropdown-translate: 0, 0;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+    :root {
+        --root-scroll-behavior: smooth;
+        --transition-delay: 0.2s;
+    }
+}
+
+@media (prefers-color-scheme: dark) {
+    :root {
+        --body-bg: var(--black);
+        --body-color: var(--white);
+        --dropdown-background: #111;
+        --link-color: #58a6ff;
+        --link-color-hover: #58a6ff;
+    }
+}

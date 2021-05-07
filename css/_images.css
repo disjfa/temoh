@@ -1,0 +1,16 @@
+.img-fluid {
+    width: 100%;
+    height: auto;
+}
+
+.background-cover {
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.background-contain {
+    background-position: center center;
+    background-size: contain;
+    background-repeat: no-repeat;
+}

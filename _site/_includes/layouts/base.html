@@ -1,0 +1,18 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="{{ "/css/main.css" | url }}" type="text/css">
+    <title>{{ title }}</title>
+    <meta property="og:title" content="{{ title }} - css-test">
+    <meta property="og:description" content="Css vars framework">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://disjfa.github.io{{ page.url | url }}">
+    <link href="https://unpkg.com/prismjs@1.20.0/themes/prism-okaidia.css" rel="stylesheet">
+
+<body>
+{% include components/navbar.html %}
+{{ content | safe }}
+</body>
+</html>

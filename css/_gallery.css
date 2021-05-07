@@ -1,0 +1,14 @@
+.gallery {
+    display: grid;
+    overflow-x: auto;
+    grid-auto-flow: column;
+    gap: 1rem;
+    position: relative;
+    scroll-snap-type: x mandatory;
+    scroll-behavior: smooth;
+}
+
+.gallery > * {
+    scroll-snap-align: center;
+    scroll-snap-stop: always;
+}

@@ -1,0 +1,19 @@
+---
+layout: layouts/base.html
+title: Home
+---
+
+<div class="container">
+    <h1>Home</h1>
+    <ul>
+        {%- for post in collections.all -%}
+            <li><a href="{{ post.url | url }}">{{ post.data.title }}</a></li>
+        {%- endfor -%}
+    </ul>
+
+    {% capture my_variable -%}
+        {% include ./_index.css %}
+    {%- endcapture %}
+
+    {{ my_variable | highlight: 'css' }}
+</div>
